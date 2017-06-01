@@ -10,7 +10,7 @@ if (!is_dir('posts')){
 
 }
 
-$fichier = fopen('posts/'.$titre.'txt', 'w');
+$fichier = fopen('posts/'.$titre.'.txt', 'w');
 fwrite($fichier, $message);
 fclose($fichier); //si on ne ferme pas, fichier en cours d'utilisation'
 
@@ -21,4 +21,3 @@ echo'<p>Bravo !</p>';
 }
 
 ?>
-
